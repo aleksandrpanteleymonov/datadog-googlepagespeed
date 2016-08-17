@@ -35,7 +35,7 @@ If you are ready with this, go directly to Step 3: Installing the check.
   2. Copy pagespeed.py to /`etc/dd-agent/checks.d/`
   3. Put the Google Api server key to `pagespeed.yaml`
 3. Configure by adding urls to check
-<pre>
+```yaml
 init_config:
   min_collection_interval: 3600 # once an hour
   google_api_key: XXXXXXXXXXXXX-YYYYYYYYYYYYYYY
@@ -49,7 +49,7 @@ instances:
     tags:
       - env:production
       - page:product
-</pre>
+```
 
 ## Done!
 
