@@ -1,0 +1,22 @@
+# Google PageSpeed Insights API Integration
+#
+init_config:
+  min_collection_interval: 3600
+  google_api_key: XXXXXXXXXXXXX-YYYYYYYYYYYYYYY
+
+# - Create as many instances as google profiles will reported to Datadog
+# - Each metric will be tagged with tags + strategy (desktop/mobile)
+#
+# Example
+#
+#  - url: http://example.com/
+#    tags:
+#      - env:production
+#      - page:home
+
+
+instances:
+  - url: http://example.com/
+    tags:
+      - env:production
+      - page:home
