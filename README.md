@@ -32,7 +32,7 @@ If you are ready with this, go directly to Step 3: Installing the check.
 1. Clone or download from [https://github.com/aleksandrpanteleymonov/datadog-googlepagespeed](https://github.com/aleksandrpanteleymonov/datadog-googlepagespeed)
 2. Install the check:
   1. Copy pagespeed.yaml to `/etc/dd-agent/conf.d/`
-  2. Copy pagespeed.py to /`etc/dd-agent/checks.d/`
+  2. Copy pagespeed.py to `/etc/dd-agent/checks.d/`
   3. Put the Google Api server key to `pagespeed.yaml`
 3. Configure by adding urls to check
 ```yaml
