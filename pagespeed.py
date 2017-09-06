@@ -22,7 +22,7 @@ class GooglePageSpeedCheck(AgentCheck):
         url = instance.get('url')
         instance_tags = instance.get('tags')
         ts = time.time()
-        h = httplib2.Http(timeout=10)
+        h = httplib2.Http(timeout=30)
 
         for strategy in ['desktop', 'mobile']:
             tags = ["strategy:" + strategy] + instance_tags
